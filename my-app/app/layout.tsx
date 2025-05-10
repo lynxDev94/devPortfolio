@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Noto_Sans } from "next/font/google";
-import "./globals.css";
 import Navigation from "@/components/navigation/navigation";
+import FooterComponent from "@/components/footer/footer";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -22,24 +23,7 @@ export default function RootLayout({
       <body className={geist.className}>
         {children}
         <Navigation />
-        <footer className="fixed left-0 top-0 flex h-screen items-center justify-between w-15 flex-col border-r border-gray-400 text-gray-400 bg-black text-sm">
-          <p className="[writing-mode:sideways-lr] pt-10">
-            &copy; Richie-Stan.
-          </p>
-          <nav aria-label="footer">
-            <ul className="">
-              <li className="[writing-mode:sideways-lr] pb-5">
-                <a href="/privacy">Privacy</a>
-              </li>
-              <li className="[writing-mode:sideways-lr] pb-5">
-                <a href="/terms">Terms</a>
-              </li>
-              <li className="[writing-mode:sideways-lr] pb-5">
-                <a href="/contact">Contact</a>
-              </li>
-            </ul>
-          </nav>
-        </footer>
+        <FooterComponent />
       </body>
     </html>
   );
