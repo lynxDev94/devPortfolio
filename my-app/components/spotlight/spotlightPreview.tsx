@@ -1,5 +1,5 @@
 import React from "react";
-import { cn } from "./spotlight.utils";
+import { cn } from "@/lib/utils";
 import { Spotlight } from "./spotlight";
 
 export function SpotlightPreview() {
@@ -8,7 +8,7 @@ export function SpotlightPreview() {
       <div
         className={cn(
           "pointer-events-none absolute inset-0 [background-size:40px_40px] select-none",
-          "[background-image:linear-gradient(to_right,#171717_1px,transparent_1px),linear-gradient(to_bottom,#171717_1px,transparent_1px)] z-10",
+          "[background-image:linear-gradient(to_right,#171717_1px,transparent_1px),linear-gradient(to_bottom,#171717_1px,transparent_1px)] z-10"
         )}
       />
 
@@ -21,7 +21,7 @@ export function SpotlightPreview() {
           Richie Stan.
         </h1>
         <p className="mx-auto mt-4 max-w-lg text-center text-3xl font-normal text-neutral-300">
-        Welcome to my personal portfolio.
+          Welcome to my personal portfolio.
         </p>
       </div>
     </div>
