@@ -8,8 +8,6 @@ import {
   MotionValue,
 } from "motion/react";
 
-
-
 export const HeroParallax = ({
   products,
 }: {
@@ -138,10 +136,7 @@ export const ProductCard = ({
       key={product.title}
       className="group/product h-96 w-[30rem] relative shrink-0"
     >
-      <a
-        href={product.link}
-        className="block group-hover/product:shadow-2xl "
-      >
+      <a href={product.link} className="block group-hover/product:shadow-2xl ">
         <img
           src={product.thumbnail}
           height="600"
