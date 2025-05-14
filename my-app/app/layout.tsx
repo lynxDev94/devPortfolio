@@ -21,8 +21,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={geist.className}>
-        {children}
-        <Navigation />
+        <main className="ml-[60px]">
+          {children}
+          <Navigation />
+        </main>
         <FooterComponent />
       </body>
     </html>
