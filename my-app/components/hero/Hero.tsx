@@ -1,8 +1,9 @@
 import React from "react";
 import { cn } from "@/lib/utils";
-import { Spotlight } from "./spotlight";
+import { Spotlight } from "../ui/Spotlight";
+import { TextGenerateEffect } from "../ui/TextGenerateEffect";
 
-export function SpotlightPreview() {
+export function Hero() {
   return (
     <div className="relative flex h-[40rem] w-full h-screen overflow-hidden rounded-md bg-black antialiased md:items-center md:justify-center">
       <div
@@ -12,14 +13,12 @@ export function SpotlightPreview() {
         )}
       />
 
-      <Spotlight
-        className="-top-40 left-0 md:-top-20 md:left-60"
-        fill="white"
-      />
+      <Spotlight className="-top-40 left-0 md:-top-20 md:left-60" />
       <div className="relative z-10 mx-auto w-full max-w-7xl p-4 pt-20 md:pt-0">
-        <h1 className="bg-opacity-50 bg-gradient-to-b from-[#2A7B9B] to-[#51BD88] bg-clip-text text-center text-4xl font-bold text-transparent md:text-7xl">
-          Richie Stan.
-        </h1>
+        <TextGenerateEffect
+          className="text-center text-[40px] text-3xl md:text-5xl lg:text-6xl text-white"
+          words={"Richie Stan."}
+        />
         <p className="mx-auto mt-4 max-w-lg text-center text-3xl font-normal text-neutral-300">
           Welcome to my personal portfolio.
         </p>
