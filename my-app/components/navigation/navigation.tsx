@@ -6,19 +6,19 @@ import { useDrawer } from "@/context/DrawerContext";
 export default function Navigation() {
   const { isOpen, setIsOpen } = useDrawer();
   const handleIsOpen = () => {
-    setIsOpen(prev => !prev);
-  }
+    setIsOpen((prev) => !prev);
+  };
 
   return (
     <nav className="fixed bottom-0 w-full bg-black text-white border-t border-gray-400/15 z-50">
       <ul className="grid grid-cols-5 h-[100px] items-center text-center">
-        <li className="border-r h-full flex items-center justify-center border-gray-400/15 cursor-pointer">
+        <li className="border-r h-full flex items-center justify-center border-gray-400/15 cursor-pointer hover:bg-gradient-to-r from-[#2A7B9B] to-[#51BD88]">
           <button onClick={() => setIsOpen(false)}>Home</button>
         </li>
-        <li className="border-r h-full flex items-center justify-center border-gray-400/15">
+        <li className="border-r h-full flex items-center justify-center border-gray-400/15 hover:bg-gradient-to-r from-[#2A7B9B] to-[#51BD88]">
           <button onClick={() => setIsOpen(false)}>Blog</button>
         </li>
-        <li className="h-full flex items-center justify-center">
+        <li className="h-full flex items-center justify-center transition-colors duration-300 ease-in-out hover:bg-gradient-to-r from-[#2A7B9B] to-[#51BD88]">
           <button onClick={() => setIsOpen(false)}>Contact</button>
         </li>
         <li className="col-span-2 h-[100px] flex items-center justify-center bg-gradient-to-r from-[#2A7B9B] to-[#51BD88]">
