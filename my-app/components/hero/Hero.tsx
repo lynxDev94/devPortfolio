@@ -55,7 +55,13 @@ export function Hero() {
             <ul className="flex flex-col justify-between">
               <li>
                 <div className="h-[100px] border-b-1 border-gray-400/15 grid grid-cols-4">
-                  <Image src={image} alt="test" className="col-span-1" width={74} height={74} />
+                  <Image
+                    src={image}
+                    alt="test"
+                    className="col-span-1"
+                    width={74}
+                    height={74}
+                  />
                   <h3>Some Project</h3>
                 </div>
               </li>
